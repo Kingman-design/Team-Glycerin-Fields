@@ -5,9 +5,7 @@ public class Planting : MonoBehaviour
 {
     [SerializeField] GameObject plant;
     [SerializeField] private Camera mainCamera;
-    [SerializeField] GameObject interactive;
-
-    bool clicked = false;
+    public bool clicked = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,14 +21,24 @@ public class Planting : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
             transform.position = raycastHit.point;
-            Debug.Log(raycastHit);
+            //Debug.Log(raycastHit);
         }
-        
+        if (clicked)
+        {
+            clicked = false;
+            planting();
+        }
     }
 
     void planting()
     {
             Instantiate(plant);
     }
+
+    public void clickTrue()
+    {
+        clicked = true;
+    }
+
 
 }

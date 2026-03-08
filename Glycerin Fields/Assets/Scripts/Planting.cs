@@ -7,12 +7,14 @@ public class Planting : MonoBehaviour
 {
     [SerializeField] GameObject plant;
     [SerializeField] private Camera mainCamera;
+    
     public bool clicked = false;
+    bool Tilled = false;
 
     public Vector3 mouse_position;
     public Vector3 Worldposition;
 
-    [SerializeField] List<GameObject> plants = new List<GameObject>();
+    [SerializeField] List<GameObject> Items = new List<GameObject>();
     int plantListpos;
 
     //public LayerMask layerstohit;
@@ -52,12 +54,12 @@ public class Planting : MonoBehaviour
 
     void changePlant()
     {
-        plant = plants[plantListpos];
+        plant = Items[plantListpos];
     }
 
     void selectPlant()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0 && plantListpos < plants.Count - 1)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0 && plantListpos < Items.Count - 1)
         {
             plantListpos++;
             changePlant();
@@ -68,6 +70,11 @@ public class Planting : MonoBehaviour
             plantListpos--;
             changePlant();
         }
+    }
+
+    void Tilling()
+    {
+
     }
 
     public void clickTrue()

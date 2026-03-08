@@ -858,11 +858,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652f22dff2c95b04e989fe3553fb4f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 4124674963144537162, guid: ba48e02ab1707b44db928224a87d1f70, type: 3}
+  plant: {fileID: 0}
   mainCamera: {fileID: 351659249}
   clicked: 0
   mouse_position: {x: 0, y: 0, z: 0}
   Worldposition: {x: 0, y: 0, z: 0}
+  plants:
+  - {fileID: 4124674963144537162, guid: ba48e02ab1707b44db928224a87d1f70, type: 3}
+  - {fileID: 571945728213849325, guid: d88f2a9f2c027e34b841d1635f21cbd1, type: 3}
+  - {fileID: 4344069758341590020, guid: fb64587392fad6f40bbacac32b13c2ae, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -12,7 +12,10 @@ public class Planting : MonoBehaviour
     public Vector3 mouse_position;
     public Vector3 Worldposition;
 
-    public LayerMask layerstohit;
+    [SerializeField] List<GameObject> plants = new List<GameObject>();
+    int plantListpos;
+
+    //public LayerMask layerstohit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -39,6 +42,7 @@ public class Planting : MonoBehaviour
             clicked = false;
             planting();
         }
+        selectPlant();
     }
 
     void planting()
@@ -46,10 +50,33 @@ public class Planting : MonoBehaviour
             Instantiate(plant,transform.position, Quaternion.identity);
     }
 
+    void changePlant()
+    {
+        plant = plants[plantListpos];
+    }
+
+    void selectPlant()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0 && plantListpos < plants.Count - 1)
+        {
+            plantListpos++;
+            changePlant();
+            
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && plantListpos > 0)
+        {
+            plantListpos--;
+            changePlant();
+        }
+    }
+
     public void clickTrue()
     {
         clicked = true;
     }
+
+
+
 
 
 }

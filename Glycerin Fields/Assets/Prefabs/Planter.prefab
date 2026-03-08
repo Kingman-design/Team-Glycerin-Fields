@@ -122,18 +122,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652f22dff2c95b04e989fe3553fb4f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 0}
+  plant: {fileID: 919132149155446097, guid: d7d9aad817c9ac04cb5b96b4a6f84fc8, type: 3}
   mainCamera: {fileID: 0}
   clicked: 0
   mouse_position: {x: 0, y: 0, z: 0}
   Worldposition: {x: 0, y: 0, z: 0}
   Items:
-  - {fileID: 4124674963144537162, guid: ba48e02ab1707b44db928224a87d1f70, type: 3}
-  - {fileID: 571945728213849325, guid: d88f2a9f2c027e34b841d1635f21cbd1, type: 3}
+  - {fileID: 919132149155446097, guid: d7d9aad817c9ac04cb5b96b4a6f84fc8, type: 3}
+  - {fileID: 919132149155446097, guid: 3f9294c165ea60842937590ea2d44e3e, type: 3}
+  - {fileID: 919132149155446097, guid: ea815bfa59e7c6947b1dfa856425c066, type: 3}
+  - {fileID: 919132149155446097, guid: 48154c43b15d2854496f715baf797b42, type: 3}
+  - {fileID: 919132149155446097, guid: da60dd435bdc64e439cb8d6f96f703da, type: 3}
   - {fileID: 4344069758341590020, guid: fb64587392fad6f40bbacac32b13c2ae, type: 3}
+  - {fileID: 919132149155446097, guid: 13a4d154978174043bb0810e22867250, type: 3}
+  - {fileID: 919132149155446097, guid: 45958c01aa79bd1439bf01aed9cb292b, type: 3}
   aud: {fileID: 4533719268628293828}
   audPlant: {fileID: 8300000, guid: 39ec8043a191eb14ab7b1a7a23960ed9, type: 3}
   audPlantvol: 0.5
+  bg: {fileID: 0}
+  bgclip: {fileID: 0}
+  bgvol: 0.75
 --- !u!82 &4533719268628293828
 AudioSource:
   m_ObjectHideFlags: 0

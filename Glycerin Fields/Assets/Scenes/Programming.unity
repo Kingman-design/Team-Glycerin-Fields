@@ -780,7 +780,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 37daf05e925eb87488b43485826fd19b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -928,6 +928,14 @@ PrefabInstance:
     - target: {fileID: 5570180945931502639, guid: b0fb4978e9e8e8c4592d998270bbfe05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188620250840325427, guid: b0fb4978e9e8e8c4592d998270bbfe05, type: 3}
+      propertyPath: bg
+      value: 
+      objectReference: {fileID: 1267703315}
+    - target: {fileID: 7188620250840325427, guid: b0fb4978e9e8e8c4592d998270bbfe05, type: 3}
+      propertyPath: bgvol
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7188620250840325427, guid: b0fb4978e9e8e8c4592d998270bbfe05, type: 3}
       propertyPath: mainCamera

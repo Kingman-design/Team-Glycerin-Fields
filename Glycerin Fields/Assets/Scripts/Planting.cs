@@ -20,13 +20,15 @@ public class Planting : MonoBehaviour
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip audPlant;
     [SerializeField] float audPlantvol;
-
+    [SerializeField] AudioSource bg;
+    [SerializeField] AudioClip bgclip;
+    [SerializeField] float bgvol;
     //public LayerMask layerstohit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        
+        bg.Play();
     }
 
     // Update is called once per frame

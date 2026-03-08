@@ -42,8 +42,9 @@ public class Planting : MonoBehaviour
             Worldposition = raycastHit.point;
             //Debug.Log(raycastHit);
         }
-
+        Worldposition.y = Worldposition.y + 2;
         transform.position = Worldposition;
+
 
         if (clicked)
         {

@@ -17,6 +17,10 @@ public class Planting : MonoBehaviour
     [SerializeField] List<GameObject> Items = new List<GameObject>();
     int plantListpos;
 
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip audPlant;
+    [SerializeField] float audPlantvol;
+
     //public LayerMask layerstohit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -49,7 +53,12 @@ public class Planting : MonoBehaviour
 
     void planting()
     {
-            Instantiate(plant,transform.position, Quaternion.identity);
+        Tilling();
+        if (Tilled)
+        {
+            Instantiate(plant, transform.position, Quaternion.identity);
+            aud.PlayOneShot(audPlant, audPlantvol);
+        }
     }
 
     void changePlant()
@@ -74,7 +83,10 @@ public class Planting : MonoBehaviour
 
     void Tilling()
     {
-
+        if(plantListpos == 0)
+        {
+            Tilled = true;
+        }
     }
 
     public void clickTrue()

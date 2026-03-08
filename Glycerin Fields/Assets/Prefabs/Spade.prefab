@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652f22dff2c95b04e989fe3553fb4f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 0}
+  plant: {fileID: 5522880084027178446, guid: 907a0c98457052b40b88405883811d12, type: 3}
   mainCamera: {fileID: 0}
   clicked: 0
   mouse_position: {x: 0, y: 0, z: 0}

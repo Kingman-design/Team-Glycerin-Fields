@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2257921685194690217}
   - component: {fileID: 6524243258599535548}
   - component: {fileID: 8292982433443697752}
+  - component: {fileID: 3703332300578240776}
   m_Layer: 0
   m_Name: potato
   m_TagString: Untagged
@@ -86,3 +87,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3703332300578240776
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5664285489399182050}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.0057464694
+  m_Height: 0.024087938
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: -2.3283063e-10}

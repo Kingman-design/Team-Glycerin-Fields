@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 78040195993478132}
   - component: {fileID: 4425106612247576251}
   - component: {fileID: 8000877219675551334}
+  - component: {fileID: 4356120986433529138}
   m_Layer: 0
   m_Name: Watermelon
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960986540465331639}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6948475, y: 0.006516028, z: 0.041773852, w: 0.71791327}
+  m_LocalRotation: {x: -0.69484925, y: 0.006516129, z: 0.041769564, w: 0.71791184}
   m_LocalPosition: {x: 1, y: 1.245, z: 0.000097122174}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -86.586, y: -54.85, z: 58.765}
 --- !u!33 &4425106612247576251
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -87,3 +88,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &4356120986433529138
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960986540465331639}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.010000001
+  m_Center: {x: -0.0001416551, y: 0, z: -0.000000007451999}
